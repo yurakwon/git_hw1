@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./stylesheet/index3.css">
+	<title>Yura`s survey</title>
+</head>
+<body>
+	<div id="wrap">
+		<div id="top">
+				<div class="top_name">
+				Yura's World
+				</div>
+		</div>
+		<div id="top_bar">
+			<ul>
+				<li class="top_list"><a href="./home.html">Home</a></li>
+				<li class="top_list"><a href="./index.html">introduction</a></li>
+				<li class="top_list"><a href="./index2.html">Hobby</a></li>
+				<li class="top_list"><a href="./index3.html">Survey</a></li> 
+			</ul>
+		</div>
+		<div id="header">
+			<h1> 설문조사</h1>
+		</div>
+
+		<div id="image">
+		<img src="./images/survey.png" alt="survey picture">
+		</div>
+
+		<div id="content">	
+			<form action="/survey.php" method="post">
+				<input type="hidden" name="type" value="user"/>
+				이름: <input type="text" name="name" size="10"/> <br/>
+				나이: <input type="text" name="age" size="1"/>세<br/>
+				별명: <input type="text" name="nickname" size="10"/> <br/>
+				성별: 
+				<input type="radio" name="gender" value="m"/> 남 
+				<input type="radio" name="gender" value="f"/> 여 
+				<br/>
+				취미:
+				<input type="checkbox" name="hobby" value="book"/>독서
+				<input type="checkbox" name="hobby" value="move"/>영화보기	
+				<input type="checkbox" name="hobby" value="music"/>음악듣기
+				<input type="checkbox" name="hobby" value="exercise"/>운동
+				<input type="checkbox" name="hobby" value="기타"/>기타
+				<input type="text" name="etc" size="10"/><br/>
+				주소:
+				<select name="city">
+					<option value="seoul">서울</option>
+					<option value="seoul">경기</option>
+					<option value="seoul">인천</option>
+					<option value="seoul">충청</option>
+					<option value="seoul">강원</option>
+					<option value="seoul">전라</option>
+					<option value="seoul">경상</option>
+					<option value="seoul">부산</option>
+					<option value="seoul">대전</option>
+					<option value="seoul">대구</option>
+					<option value="seoul">제주</option>
+				</select>
+				<br/>
+				직업:
+				<select name="job">
+					<option value="student">학생</option>
+					<option value="worker">직장인</option>
+					<option value="houseworker">주부</option>
+					<option value="nojob">무직</option>
+
+				</select>
+				<br/>	
+				이메일:<input type="text" name="email" size="10"/>
+				<select name="email">
+					<option value="naver">naver.com</option>
+					<option value="google">google.com</option>
+					<option value="daum">hanmail.net</option>
+					<option value="nate">nate.com</option>
+				</select> <br/>
+				간단한 본인소개: <br/>
+				<textarea cols="50" rows="3" name="intro"></textarea><br/>
+				<input type="submit"/>
+
+
+			</form>
+		</div>
+	</div>
+
+
+
+</body>
+</html>
